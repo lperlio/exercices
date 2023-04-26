@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fots.googleapis.com/css?family=Monserrat">
+    <title>Onglets</title>
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f1F1F1;
+        }
+
+        #tabs .tab-titles {
+            margin-bottom: 0.3rem;
+        }
+
+        #tabs .tab-titles li {
+            display: inline-block;
+            background: #d9d9d9;
+            padding: 0.4rem 0.6rem;
+            transition: all 0.3 ease-in-out;
+        }
+
+        #tabs .tab-titles li.active, 
+        #tabs .tab-titles li:hover {
+            background-color: greenyellow;
+            color: red;
+            cursor: pointer;
+        }
+
+        #tabs > div {
+            display: none;
+        }
+        
+        #tabs > div.active {
+            display: block;
+            box-shadow: 0 0 3px #ccc;
+            padding: 1rem 2rem;
+            background-color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div class="contatiner">
+        <div class="row justify-content-center">
+            <div class="col-9 mt-5">
+                <div id="tabs">
+                    <ul class="tab-titles">
+                        <li data-tabtitle="0" class="active">Titre 1</li>
+                        <li data-tabtitle="1">Titre 2</li>
+                        <li data-tabtitle="2">Titre 3</li>
+                    </ul>
+
+
+                    <div id="tab0" class="active">
+                        <p>
+                            Texte 1 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos fugit dolore fugiat itaque rerum assumenda, vitae, sequi cupiditate libero similique! Ea doloremque ratione id perferendis at quod? Saepe, eligendi!
+                        </p>
+                    </div>
+                    <div id="tab1">
+                        <p>
+                            Texte 2 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, nulla! Blanditiis amet repellendus voluptatum ad natus laboriosam soluta corrupti ratione, voluptates voluptas quos atque eveniet quisquam molestias provident maxime ducimus culpa deleniti consequatur. Quibusdam fuga rerum, rem culpa hic incidunt atque facere! Hic eligendi quasi similique a ex voluptate quam!
+                        </p>
+                    </div>
+                    <div id="tab2">
+                        <p>
+                            Texte 3 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ratione sed sapiente nulla deserunt velit ad voluptatum omnis, impedit est hic excepturi nam harum id dignissimos quaerat, magni tenetur aperiam amet autem beatae magnam recusandae delectus molestiae. Odio, facilis necessitatibus fuga quis doloribus, provident, natus eos laboriosam culpa mollitia officia enim alias facere. Similique sapiente optio deserunt doloribus fugit iste!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<script src="./js/onglets.js"></script>
+    
+</body>
+</html>
