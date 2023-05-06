@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+
+@font-face {
+    font-family: "DMSerif";
+    src:url(./assets/fonts/DMSerifDisplay-Regular.ttf);
+}
+
+/* * L'étoile donne du style à tous les éléments */
+/* * {
+   margin: 0;
+   padding: 0; 
+} */
+
+body {
+    font-family: "DMSerif", Verdana;
+    background: url(./assets/img/bg.jpg) center/cover;
+    /* VH = 100% de la taille de l'écran (viewport height)*/
+    min-height: 100vh;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    /* Les tailles de polices doivent être en REM 1Rem = 16px*/
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 8px #00000042;
+    color: #ab0ef4;
+    font-family: 'Oswald', sans-serif;
+}
+
+main {
+    min-height: 500px;
+    width: 90%;
+    background: rgba(241, 239, 239, 0.898);
+    /* Centrer une boite */
+    margin: 0 auto;
+    border: 2px solid blue;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 0 20px 4px #81cfc6;
+    padding: 15px;
+
+}
+
+h2 {
+    margin: 0;
+}
+
+.flexbox {
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* FLEXBOX */
+/* Sert à répartir  équitableùent des élément sur la page*/
+
+.flexbox ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flexbox li {
+    list-style: none;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    background: turquoise;
+    /* centrer un unique élément verticalement et horizontalement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
