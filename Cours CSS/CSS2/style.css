@@ -1,0 +1,98 @@
+
+:root {
+    --color1: rgb(33, 47, 33);
+    --color2: pink;
+    --color3: rgb(45, 129, 38);
+    --color4: rgb(169, 169, 239);   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./img/guitare1.jpg) center/cover;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: rgba(243, 237, 237, 0.505);
+    width: calc(100% - 50px);
+    padding: 20px 20px 6px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.526);
+    border-radius: 5px;
+    backdrop-filter: blur(2px);
+}
+.card:before {
+    content: "\2618";
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    font-size: 2.4rem;
+}
+
+h1 {
+    margin-bottom: 24px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.polygon-container {
+    filter: drop-shadow(-1px 6px 3px var(--color3));
+    /* Mettre le parent en grid */
+    place-self: center left;
+}
+
+.polygon {
+    clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+    background: linear-gradient(135deg, var(--color2) 0%, var(--color1) 100%);
+    height: 100px;
+    width: 100px;
+}
+
+.polygon:after {
+    content: "Un texte";
+    position: absolute;
+    color: var(--color2);
+    background: var(--color4);
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%)rotate(344deg
+    );
+    width: 90px;
+    padding: 4px;
+    text-align: center;
+}
+
+p {
+    line-height: 26px;
+    margin: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+
+    text-align: justify;
+}
+
+p::selection {
+    background: var(--color3);
+    color: var(--color3)
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
