@@ -1,7 +1,7 @@
 
 :root {
     --color1: rgb(33, 47, 33);
-    --color2: pink;
+    --color2: teal;
     --color3: rgb(45, 129, 38);
     --color4: rgb(169, 169, 239);   
 }
@@ -161,4 +161,27 @@ button {
 
 button:hover {
     letter-spacing: 3px;
+}
+
+button:active {
+    transform: scale(1.2);
+}
+
+button:hover + a,
+a:hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+a {
+    color: var(--color2);
+    display: block;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.3s;
+}
+
+a:visited {
+    color: var(--color4);
 }
