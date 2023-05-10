@@ -40,7 +40,27 @@ body {
 
 h1 {
     margin-bottom: 24px;
+    position: relative;
+
 }
+
+h1::after {
+    content: "";
+    position: absolute;
+    background: var(--color2);
+    height: 1px;
+    width: 100%;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    /* animation: h1anim 10s ease-in-out; */
+} 
+
+/* @keyframes h1anim {
+    100% {
+        transform: translate(-50%) scaleX(1);
+    }
+} */
 
 .grid-container {
     display: grid;
