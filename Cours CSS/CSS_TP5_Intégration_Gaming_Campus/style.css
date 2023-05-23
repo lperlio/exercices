@@ -193,30 +193,31 @@ h1 {
     background: rgba(0, 0, 0, 0.9);
 }
 
-.main-new-container {
+.main-news-container {
     display: flex;
     justify-content: space-around;
     max-width: 1100px;
     margin: 45px auto;
-}
+} 
 
-.main-new-container > div {
+.main-news-container > div {
     position: relative;
+    max-width: 23%;
 }
 
 .mn-pic img {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     border-radius: 3px;
     box-shadow: 0 2px 10px #888;
 }
 
-.main-new-container h4 {
+.main-news-container h4 {
     margin: 15px 0;
     text-align: left;
 }
 
-.main-new-container p {
+.main-news-container p {
     text-align: left;
     font-size: 0.8rem;
     font-weight: 800;
