@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" 
+href="https://stackpath.bootstrapcdn.com/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1JTQUOhcWr7x9JvoRxT2MZw1T"
+crossorigin="anonymous"/>
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+
+    <title>Galerie Photos</title>
+
+    <style>
+      .col-5 img {
+        width: 100%;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Galerie Photos</h1>
+            </div>
+            <div class="col-1" id="prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="col-5">
+                <img src="./img/Chat 1.JPG" alt="Chat1" class="img-fluid">
+                <img src="./img/Chat 2.JPG" alt="Chat2" class="img-fluid">
+                <img src="./img/Chat 3.JPG" alt="Chat3" class="img-fluid">
+                <img src="./img/Chat 4.JPG" alt="Chat4" class="img-fluid">
+            </div>
+            <div class="col-1" id="next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+    <script src="./js/09_galerie.js"></script>
+    
+</body>
+</html>
