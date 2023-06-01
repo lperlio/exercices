@@ -43,16 +43,58 @@ p {
     letter-spacing: 2px;
     cursor: pointer;
     font: 700 0.75rem "Source Sans Pro";
+    transition: 0.3s;
 }
 
 .button:hover,
-footer a:hover {
+footer i:hover {
     border: 1px solid skyblue;
     color: skyblue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 55px;
 }
 
 /* ******************************************************** */
 
 body {
     font-family: "Source Sans Pro", sans-serif;
+}
+
+header {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.img-banner {
+    background: url(./asset/img/banner.jpg) right/cover;
+}
+
+/* ******************SECTION 1***************************** */
+
+.section-1 {
+    display: grid;
+    grid-template-columns: 37% 63%;
+    min-height: 400px;
+}
+
+.section-1 .img {
+    background: url(./asset/img/img-left.jpg) center/cover;
+}
+
+/* ******************SECTION 2***************************** */
+
+.section-2 {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    min-height: 400px;
+}
+
+.section-2 .img {
+    background: url(./asset/img/img-right.jpg) center/cover;
 }
