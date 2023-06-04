@@ -13,7 +13,7 @@ console.log(typeof enligne);
 console.log(typeof choix);
 
 //Concatenation
-console.log(prenom + ' ' + age + ' ans');
+console.log(prenom + ' ' + age + 'ans');
 console.log(`Je m'appelle ${prenom}, j'ai ${age} ans`);
 
 //echapper un carractere antislash

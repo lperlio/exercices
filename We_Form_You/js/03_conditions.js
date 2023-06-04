@@ -17,7 +17,7 @@ let vehicule = prompt(
 
 console.log(vehicule);
 
-let km = prompt('Combien de KM souhaitez vous faire');
+let km = prompt('Combien de KM souhaitez vous faire ?');
 
 const prix = {
   peugeot: 0.4,
