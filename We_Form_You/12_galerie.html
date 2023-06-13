@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+<!-- <link rel="stylesheet" 
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1JTQUOhcWr7x9JvoRxT2MZw1T"
+crossorigin="anonymous"/> -->
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+
+    <title>Galerie Photos</title>
+
+    <style>
+        .row {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin: 10px;
+        }
+
+
+      #play,
+      #pause,
+      #next,
+      #prev {
+        color: #666;
+        font-size: 2rem;
+        margin: 1rem;
+      }
+
+      #galery img {
+        opacity: 0;
+        transition: opacity 0.6s ease-in-out;
+      }
+      #galery img.show {
+        opacity: 1;
+        transition: opacity 0.6s ease-in-out;
+      }
+      
+     #galery img.hidden {
+         display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Galerie</h1>
+            </div>
+            <div class="col-1" id="prev">
+                <i class="fas fa-chevron-up"></i> 
+            </div>
+            <div class="col-5" id="galery">
+                <img src="./img/Chat 1.JPG" alt="" class="img-fluid" />
+                <img src="./img/Chat 2.JPG" alt="" class="img-fluid" />
+                <img src="./img/Chat 3.JPG" alt="" class="img-fluid" />
+                <img src="./img/Chat 4.JPG" alt="" class="img-fluid" />
+            </div>
+            <div class="col-1" id="next">
+                <i class="fas fa-chevron-down"></i> 
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <span id="pause"><i class="fas fa-pause"></i></span>
+                    <span id="play"><i class="fas fa-play"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/12_galerie.js"></script>
+    
+</body>
+</html>
