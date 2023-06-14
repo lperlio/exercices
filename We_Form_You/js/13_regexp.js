@@ -13,3 +13,12 @@ const validEmail = function(inputEmail) {
 
     let testEmail = emailRegExp.test(inputEmail.value);
 };
+
+let testEmail = emailRegExp.test(inputEmail.value);
+let small = inputEmail.nextElementSibling;
+
+if (testEmail) {
+    small.innerHTML = `Adresse Valide`;
+} else {
+    small.innerHTML = `Adresse Non Valide`;
+}
