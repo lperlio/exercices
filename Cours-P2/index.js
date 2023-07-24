@@ -98,22 +98,68 @@ window.addEventListener('scroll', () => {
 
 //--------------------------------------------------------
 // Les Formulaires
-const inputName = document.querySelector('input[type="text"]');
-const select = document.querySelector('select');
-const form = document.querySelector('form');
-let pseudo = '';
-let language = '';
+// const inputName = document.querySelector('input[type="text"]');
+// const select = document.querySelector('select');
+// const form = document.querySelector('form');
+// let pseudo = '';
+// let language = '';
 
-console.log(select);
+// console.log(select);
 
-inputName.addEventListener('input', (e) => {
-  pseudo = e.target.value;
+// inputName.addEventListener('input', (e) => {
+//   pseudo = e.target.value;
+// });
+
+// select.addEventListener('input', (e) => {
+//   language = e.target.value;
+// });
+
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
+
+//   if (cgv.checked) {
+//     document.querySelector('form > div').innerHTML = `
+//     <h3>Pseudo : ${pseudo}</h3>
+//     <h4>Langage préféré : ${language}</h4>
+//     `;
+//   } else {
+//     alert('Veuillez accepter les CGV');
+//   }
+// });
+
+//...................................................................
+//Load Event
+window.addEventListener('load', () => {
+  console.log('Document Chargé !');
 });
 
-select.addEventListener('input', (e) => {
-  language = e.target.value;
+//.....................................................................
+// Foreach
+const boxes = document.querySelectorAll('.box');
+console.log(boxes);
+
+boxes.forEach((box) => {
+  box.addEventListener('click', (e) => {
+    e.target.style.transform = 'scale(0.7)';
+  });
+});
+//.....................................................................
+// ADDEventListener Vs onclick
+//Bubbling => (de bas )
+document.body.addEventListener('click', () => {
+  console.log('click 1 !');
 });
 
-form.addEventListener('submit', () => {
-  console.log('yes !');
+// Use capture
+document.body.addEventListener(
+  'click',
+  () => {
+    console.log('click 2 !');
+  },
+  true
+);
+//....................................................................
+questionContainer.addEventListener('click', () => {
+  alert('Test !');
+  e.stopPropagation();
 });
