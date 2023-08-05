@@ -21,6 +21,7 @@ li {
     font-size: 30px;
     margin: 0;
     padding: 40px 50px;
+    margin-bottom: 100px;
 }
 
 .color_c {
@@ -51,47 +52,76 @@ li {
     background: yellow;
 }
 
-.manche {
+.container {
     display: flex;
+}
+
+.container span {
+    background: black;
+    border-radius: 100px;
+    display: inline;
+    margin-left: 40px;
+}
+
+.m1 {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-table {
-    border: 5px solid black;
-    margin-top: 100px;
+.case {
+    display: flex;
+    height: 40px;
+    border: 2px solid black;
     align-items: center;
-    border-left: 10px solid red;
+    margin-bottom: 0;
 }
 
-
-.case_first {
-    padding: 10px 50px;
-    border: 1px solid black;
-    border-bottom: 5px solid black;
-    border-right: 5px solid green;
-    border-top: none;
-    border-left: none;
-    margin-top: -5px;
-}   
-
-.case_first_2 {
-    padding: 10px 40px;
-    border: 1px solid black;
+.one {
+    width: 100px;
 }
 
-.case_first_3 {
-    padding: 5px 30px;
-    border: 1px solid black;
+.two,
+.three,
+.four,
+.five {
+    width: 100px;
 }
 
-th {
-    border-right: 10px solid black;
+.six,
+.seven,
+.eight,
+.nine {
+    width: 90px;
 }
 
-#cercle {
-    border: 5px solid black;
-    width: 0px;
-    height: 1px;
-    border-radius: 50%;
-    
+.ten,
+.eleven,
+.twelve {
+    width: 70px;
 }
+
+.m2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.m3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.m4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.m5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
