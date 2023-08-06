@@ -4,53 +4,105 @@
     padding: 0;
 }
 
-
+/* notes */
 
 .notes ul {
     display: flex;
     justify-content: space-around;
 }
 
-ul {
-    list-style-type: none;
+h1 {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-li {
-    border: 2px solid  green;
-    border-radius: 50%;
-    font-size: 30px;
-    margin: 0;
-    padding: 40px 50px;
-    margin-bottom: 100px;
+.circle { 
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    background: rgb(231, 229, 229);
+    border-radius: 100px;
+    line-height: 30px;
+}
+/* *Notes cordes à vide */
+
+.v6 {
+    position: absolute;
+    top: 269px;
+    left: 364px;
 }
 
-.color_c {
-    background: rgb(199, 199, 226);
+.v5 {
+    position: absolute;
+    top: 228px;
+    left: 364px;
 }
 
-.color_d {
-    background: green;
+.v4 {
+    position: absolute;
+    top: 186px;
+    left: 364px;
 }
 
-.color_e {
-    background: orange;
+.v3 {
+    position: absolute;
+    top: 146px;
+    left: 364px;
 }
 
-.color_f {
-    background: plum;
+.v2 {
+    position: absolute;
+    top: 103px;
+    left: 364px;
 }
 
-.color_g {
-    background: rgb(16, 236, 16);
+.v1 {
+    position: absolute;
+    top: 62px;
+    left: 364px;
 }
 
-.color_a {
-    background: red;
+/* Notes case 1 */
+.C1-1 {
+    position: absolute;
+    top: 61px;
+    left: 441px;
 }
 
-.color_b {
-    background: yellow;
+.C1-2 {
+    position: absolute;
+    top: 102px;
+    left: 441px;
 }
+.C1-3 {
+    position: absolute;
+    top: 146px;
+    left: 441px;
+}
+.C1-4 {
+    position: absolute;
+    top: 187px;
+    left: 441px;
+}
+.C1-5 {
+    position: absolute;
+    top: 228px;
+    left: 441px;
+}
+.C1-6 {
+    position: absolute;
+    top: 268px;
+    left: 441px;
+}
+
+
+
+
+
+/* manche de la guitare */
 
 .container {
     display: flex;
@@ -58,9 +110,11 @@ li {
 
 .container span {
     background: black;
+    width: 20px;
+    height: 20px;
     border-radius: 100px;
     display: inline;
-    margin-left: 40px;
+    margin: 0px auto;
 }
 
 .m1 {
@@ -72,15 +126,16 @@ li {
 .case {
     display: flex;
     height: 40px;
-    border: 2px solid black;
+    border: 1px solid black;
     align-items: center;
     margin-bottom: 0;
 }
 
 .one {
-    width: 100px;
+    border-left: 10px solid red;
 }
 
+.one,
 .two,
 .three,
 .four,
