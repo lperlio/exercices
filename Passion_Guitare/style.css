@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+.manche {
+    position: relative;
+}
+
 /* notes */
 
 .notes ul {
@@ -98,8 +102,368 @@ h1 {
     left: 441px;
 }
 
+/* Notes case 2 */
+.C2-1 {
+    position: absolute;
+    top: 61px;
+    left: 544px;
+}
 
+.C2-2 {
+    position: absolute;
+    top: 102px;
+    left: 544px;
+}
+.C2-3 {
+    position: absolute;
+    top: 146px;
+    left: 544px;
+}
+.C2-4 {
+    position: absolute;
+    top: 187px;
+    left: 544px;
+}
+.C2-5 {
+    position: absolute;
+    top: 228px;
+    left: 544px;
+}
+.C2-6 {
+    position: absolute;
+    top: 268px;
+    left: 544px;
+}
 
+/* Notes case 3 */
+.C3-1 {
+    position: absolute;
+    top: 61px;
+    left: 646px;
+}
+
+.C3-2 {
+    position: absolute;
+    top: 102px;
+    left: 646px;
+}
+.C3-3 {
+    position: absolute;
+    top: 146px;
+    left: 646px;
+}
+.C3-4 {
+    position: absolute;
+    top: 187px;
+    left: 646px;
+}
+.C3-5 {
+    position: absolute;
+    top: 228px;
+    left: 646px;
+}
+.C3-6 {
+    position: absolute;
+    top: 268px;
+    left: 646px;
+}
+
+/* Notes case 4 */
+.C4-1 {
+    position: absolute;
+    top: 61px;
+    left: 749px;
+}
+
+.C4-2 {
+    position: absolute;
+    top: 102px;
+    left: 749px;
+}
+.C4-3 {
+    position: absolute;
+    top: 146px;
+    left: 749px;
+}
+.C4-4 {
+    position: absolute;
+    top: 187px;
+    left: 749px;
+}
+.C4-5 {
+    position: absolute;
+    top: 228px;
+    left: 749px;
+}
+.C4-6 {
+    position: absolute;
+    top: 268px;
+    left: 749px;
+}
+
+/* Notes case 5 */
+.C5-1 {
+    position: absolute;
+    top: 61px;
+    left:851px;
+}
+
+.C5-2 {
+    position: absolute;
+    top: 102px;
+    left:851px;
+}
+.C5-3 {
+    position: absolute;
+    top: 146px;
+    left:851px;
+}
+.C5-4 {
+    position: absolute;
+    top: 187px;
+    left:851px;
+}
+.C5-5 {
+    position: absolute;
+    top: 228px;
+    left:851px;
+}
+.C5-6 {
+    position: absolute;
+    top: 268px;
+    left: 851px;
+}
+
+/* Notes case 6 */
+.C6-1 {
+    position: absolute;
+    top: 61px;
+    left:948px;
+}
+
+.C6-2 {
+    position: absolute;
+    top: 102px;
+    left:948px;
+}
+.C6-3 {
+    position: absolute;
+    top: 146px;
+    left:948px;
+}
+.C6-4 {
+    position: absolute;
+    top: 187px;
+    left:948px;
+}
+.C6-5 {
+    position: absolute;
+    top: 228px;
+    left:948px;
+}
+.C6-6 {
+    position: absolute;
+    top: 268px;
+    left: 948px;
+}
+
+/* Notes case 7 */
+.C7-1 {
+    position: absolute;
+    top: 61px;
+    left:1038px;
+}
+
+.C7-2 {
+    position: absolute;
+    top: 102px;
+    left:1038px;
+}
+.C7-3 {
+    position: absolute;
+    top: 146px;
+    left:1038px;
+}
+.C7-4 {
+    position: absolute;
+    top: 187px;
+    left:1038px;
+}
+.C7-5 {
+    position: absolute;
+    top: 228px;
+    left:1038px;
+}
+.C7-6 {
+    position: absolute;
+    top: 268px;
+    left: 1038px;
+}
+
+/* Notes case 8 */
+.C8-1 {
+    position: absolute;
+    top: 61px;
+    left:1130px;
+}
+
+.C8-2 {
+    position: absolute;
+    top: 102px;
+    left:1130px;
+}
+.C8-3 {
+    position: absolute;
+    top: 146px;
+    left:1130px;
+}
+.C8-4 {
+    position: absolute;
+    top: 187px;
+    left:1130px;
+}
+.C8-5 {
+    position: absolute;
+    top: 228px;
+    left:1130px;
+}
+.C8-6 {
+    position: absolute;
+    top: 268px;
+    left: 1130px;
+}
+
+/* Notes case 9 */
+.C9-1 {
+    position: absolute;
+    top: 61px;
+    left:1223px;
+}
+
+.C9-2 {
+    position: absolute;
+    top: 102px;
+    left:1223px;
+}
+.C9-3 {
+    position: absolute;
+    top: 146px;
+    left:1223px;
+}
+.C9-4 {
+    position: absolute;
+    top: 187px;
+    left:1223px;
+}
+.C9-5 {
+    position: absolute;
+    top: 228px;
+    left:1223px;
+}
+.C9-6 {
+    position: absolute;
+    top: 268px;
+    left: 1223px;
+}
+
+/* Notes case 10 */
+.C10-1 {
+    position: absolute;
+    top: 61px;
+    left:1306px;
+}
+
+.C10-2 {
+    position: absolute;
+    top: 102px;
+    left:1306px;
+}
+.C10-3 {
+    position: absolute;
+    top: 146px;
+    left:1306px;
+}
+.C10-4 {
+    position: absolute;
+    top: 187px;
+    left:1306px;
+}
+.C10-5 {
+    position: absolute;
+    top: 228px;
+    left:1306px;
+}
+.C10-6 {
+    position: absolute;
+    top: 268px;
+    left: 1306px;
+}
+
+/* Notes case 11 */
+.C11-1 {
+    position: absolute;
+    top: 61px;
+    left:1379px;
+}
+
+.C11-2 {
+    position: absolute;
+    top: 102px;
+    left:1379px;
+}
+.C11-3 {
+    position: absolute;
+    top: 146px;
+    left:1379px;
+}
+.C11-4 {
+    position: absolute;
+    top: 187px;
+    left:1379px;
+}
+.C11-5 {
+    position: absolute;
+    top: 228px;
+    left:1379px;
+}
+.C11-6 {
+    position: absolute;
+    top: 268px;
+    left: 1379px;
+}
+
+/* Notes case 12 */
+.C12-1 {
+    position: absolute;
+    top: 61px;
+    left:1450px;
+}
+
+.C12-2 {
+    position: absolute;
+    top: 102px;
+    left:1450px;
+}
+.C12-3 {
+    position: absolute;
+    top: 146px;
+    left:1450px;
+}
+.C12-4 {
+    position: absolute;
+    top: 187px;
+    left:1450px;
+}
+.C12-5 {
+    position: absolute;
+    top: 228px;
+    left:1450px;
+}
+.C12-6 {
+    position: absolute;
+    top: 268px;
+    left: 1450px;
+}
 
 
 /* manche de la guitare */
@@ -180,3 +544,13 @@ h1 {
     justify-content: center;
 }
 
+.accord_majeur_c p {
+    margin-top: 54px;
+    text-align: center;
+}
+
+.cc {
+    display: grid;
+    grid-template-columns: 10%, 10%;
+    border: 1px solid black;
+}
