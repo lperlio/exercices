@@ -1,0 +1,43 @@
+/**********************************Manche de la guitare *******************************************/
+
+
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 50px;
+}
+
+main {
+    min-height: 500px;
+    width: 90%;
+    background: pink;
+    margin: 0 auto;
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.manche {
+    border: 2px solid skyblue;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.manche ul {
+    padding: 0;
+    display: flex;
+}
+
+
+.manche li {
+    margin: -8px;
+    list-style: none;
+    height: 60px;
+    width: 160px;
+    background: red;
+    border: 1px solid black;
+}
