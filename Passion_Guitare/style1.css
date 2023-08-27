@@ -6,21 +6,19 @@
 main {
     min-height: 500px;
     width: 90%;
-    background: pink;
     margin: 0 auto;
-    border: 2px solid blue;
     border-radius: 20px;
     padding: 25px 25px 10px 95px;
 }
 
 h2 {
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .manche {
-    border-left: 6px solid skyblue;
-    padding-left: 9px;
+    border-left: 6px solid red;
+    padding-left: 10px;
     padding-top: 0;
     padding-bottom: 0;
     margin-top: 20px;
@@ -52,16 +50,30 @@ h2 {
     width: 140px !important;
 }
 
+
+#rond3 {
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+    background: black;
+    position: absolute;
+    border-radius: 150px;
+    top: 22px;
+    left: 55px;
+    text-align: center;
+    line-height: 15px;
+}
+
 /* Simple note */
 
 #C1-1, #C1-2, #C0-1, #C2-4, #C2-3, #C2-5, #C3-1, #C3-2, #C3-4, #C3-5, #C4-3, #C5-1, #C7-1, #C8-1, #C10-1, #C12-1, #C5-2, #C6-2, #C8-2, #C10-2, #C12-2, #C7-3, #C9-3, #C10-3, #C12-3, #C5-4, #C7-4, #C9-4, #C10-4, #C12-4, #C5-5, #C7-5, #C8-5, #C10-5, #C12-5 {
     height: 40px;
     width: 40px;
     border: 1px solid black;
-    background: green;
+    background: lightgray;
     position: absolute;
     border-radius: 150px;
-    top: -20px;
+    top: -21px;
     left: 43px;
     text-align: center;
     line-height: 40px;
@@ -73,7 +85,7 @@ h2 {
     height: 40px;
     width: 60px;
     border: 1px solid black;
-    background: green;
+    background: lightgray;
     position: absolute;
     border-radius: 150px;
     top: -22px;
@@ -88,10 +100,10 @@ h2 {
     height: 40px;
     width: 40px;
     border: 1px solid black;
-    background: green;
+    background: lightgrey;
     position: absolute;
     border-radius: 150px;
-    top: -19px;
+    top: -22px;
     left: -56px;
     text-align: center;
     line-height: 40px;
@@ -103,7 +115,7 @@ h2 {
     height: 40px;
     width: 40px;
     border: 1px solid black;
-    background: green;
+    background: lightgray;
     position: absolute;
     border-radius: 150px;
     top: 38px;
@@ -116,7 +128,7 @@ h2 {
     height: 40px;
     width: 40px;
     border: 1px solid black;
-    background: green;
+    background: lightgray;
     position: absolute;
     border-radius: 150px;
     top: 38px;
@@ -129,7 +141,7 @@ h2 {
     height: 40px;
     width: 60px;
     border: 1px solid black;
-    background: green;
+    background: lightgray;
     position: absolute;
     border-radius: 150px;
     top: 38px;
