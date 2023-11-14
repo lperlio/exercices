@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapitre 7</title>
+</head>
+<body>
+    <script>
+        // function addZ(aString) {
+        //     aString += "z";
+        //     return aString;
+        // }
+        // let myNumbers = [2,4,2,7];
+        // let total = 0;
+        // for (oneNumber in myNumbers) {
+        //     total = total + myNumbers[oneNumber];
+        // }
+        // document.write(total);
+        /*
+         * Ajoute les éléments dans un tableau et reourne le total
+         * *@param {Array.<number>} numbersToAdd
+         * @return {Number} sum
+         */
+         function addNumbers(numbersToAdd) {
+            var sum = 0;
+            for (oneNumber in numbersToAdd) {
+                sum = sum + numbersToAdd[oneNumber];
+            }
+            return sum;
+         }
+
+         var myNumbers = [2,4,2,7];
+         var myNumbers2 = [3333,222,111];
+         var myNumbers3 = [777,555,777,555];
+         var sum1 = addNumbers(myNumbers);
+         var sum2 = addNumbers(myNumbers2);
+         var sum3 = addNumbers(myNumbers3);
+
+         document.write(sum1 + "<br>");
+         document.write(sum2 + "<br>");
+         document.write(sum3 + "<br>");
+
+    </script>
+</body>
+</html>
