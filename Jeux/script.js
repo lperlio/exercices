@@ -7,18 +7,16 @@ window.onload = function () {
   btn_start = document.getElementById('start');
   btn_stop = document.getElementById('stop');
   t;
-  ms = 0;
-  s = 0;
-  mn = 0;
-  h = 0;
+  (ms = 0), (s = 0), (mn = 0), (h = 0);
 };
 
 // mettre en place le compteur
 
 function update_chrono() {
+  ms += 1;
   if (ms == 10) {
     ms = 1;
-    s + 1;
+    s += 1;
   }
   if (s == 60) {
     s = 0;
@@ -33,9 +31,9 @@ function update_chrono() {
   // [0] permet de selectionner le premier span
   // [1]                        le 2ème span etc
   sp[0].innerHTML = h = 'h';
-  sp[1].innerHTML = mn = 'h';
-  sp[2].innerHTML = s = 'h';
-  sp[3].innerHTML = ms = 'h';
+  sp[1].innerHTML = mn = 'min';
+  sp[2].innerHTML = s = 's';
+  sp[3].innerHTML = ms = 'ms';
 }
 
 // mettre en place la fonction start
@@ -61,7 +59,7 @@ function reset() {
   (ms = 0), (s = 0), (mn = 0), (h = 0);
   // insérer ces nouvelles valeurs dans les spans
   sp[0].innerHTML = h = 'h';
-  sp[1].innerHTML = mn = 'h';
-  sp[2].innerHTML = s = 'h';
-  sp[3].innerHTML = ms = 'h';
+  sp[1].innerHTML = mn = 'min';
+  sp[2].innerHTML = s = 's';
+  sp[3].innerHTML = ms = 'ms';
 }
