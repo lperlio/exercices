@@ -13,7 +13,7 @@ const btn1 = document.querySelector('#btn-1');
 const btn2 = document.getElementById('btn-2');
 const response = document.querySelector('p');
 
-console.log(btn1, btn2);
+// console.log(btn1, btn2);
 
 questionContainer.addEventListener('click', () => {
   questionContainer.classList.toggle('question-click');
@@ -104,8 +104,56 @@ window.addEventListener('scroll', () => {
 
 const inputName = document.querySelector('input[type="text"]');
 const select = document.querySelector('select');
+const form = document.querySelector('form');
 let pseudo = '';
+let language = '';
 
 inputName.addEventListener('input', (e) => {
   pseudo = e.target.value;
 });
+
+select.addEventListener('input', (e) => {
+  language = e.target.value;
+});
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  // console.log(cgv.checked);
+
+  if (cgv.checked) {
+    document.querySelector('form > div').innerHTML = `
+    <h3>Pseudo : ${pseudo}</h3>
+    <h4>Langage préféré : ${language}</h4>
+    `;
+  } else {
+    alert('Veuillez accepter les CGV');
+  }
+});
+
+//-------------------------------------------------------------------------------------
+// Load event
+
+window.addEventListener('Load', () => {
+  // console.log('Document Chargé !');
+});
+
+//-------------------------------------------------------------------------------------
+// ForEach
+
+const boxes = document.querySelectorAll('box');
+
+// console.log(boxes);
+
+boxes.forEach((box) => {
+  box.addEventListener('click', (e) => {
+    e.target.style.transform = 'scale(0.7)';
+  });
+});
+
+//---------------------------------------------------------------------------------------
+// addEventListener VS onclick
+
+document.body.onclick = function () {
+  console.log('click');
+};
