@@ -62,27 +62,27 @@ response.addEventListener('mouseover', () => {
 //---------------------------------------------------------------------------
 //KeyPress event
 
-const keypressContainer = document.querySelector('.keypress');
-const key = document.getElementById('key');
-const ring = (key) => {
-  const audio = new Audio();
-  audio.src = key + '.mp3';
-  audio.play();
-};
+// const keypressContainer = document.querySelector('.keypress');
+// const key = document.getElementById('key');
+// const ring = (key) => {
+//   const audio = new Audio();
+//   audio.src = key + '.mp3';
+//   audio.play();
+// };
 
-document.addEventListener('keypress', (e) => {
-  key.textContent = e.key;
+// document.addEventListener('keypress', (e) => {
+//   key.textContent = e.key;
 
-  if (e.key === 'j') {
-    keypressContainer.style.background = 'pink';
-  } else if (e.key === 'h') {
-    keypressContainer.style.background = 'teal';
-  } else {
-    keypressContainer.style.background = 'red';
-  }
+//   if (e.key === 'j') {
+//     keypressContainer.style.background = 'pink';
+//   } else if (e.key === 'h') {
+//     keypressContainer.style.background = 'teal';
+//   } else {
+//     keypressContainer.style.background = 'red';
+//   }
 
-  ring(e.key);
-});
+//   ring(e.key);
+// });
 
 //------------------------------------------------------------------------------
 //Scroll Event
@@ -154,6 +154,95 @@ boxes.forEach((box) => {
 //---------------------------------------------------------------------------------------
 // addEventListener VS onclick
 
-document.body.onclick = function () {
-  console.log('click');
-};
+// document.body.onclick = () => {
+//   console.log('click');
+// };
+
+// Bubbling => fin (de base l'eventlistener est paramétré en mode Bubbling)
+document.body.addEventListener(
+  'click',
+  () => {
+    // console.log('click 1 !');
+  },
+  false
+);
+
+//Use capture
+document.body.addEventListener(
+  'click',
+  () => {
+    // console.log('click 2 !');
+  },
+  true
+);
+
+//-----------------------------------------------------------------------------------------
+// Stop propagation
+
+// questionContainer.addEventListener('click', () => {
+//   alert('Test !');
+//   e.stopPropagation();
+// });
+
+//RemoveEventListener
+
+//------------------------------------------------------------------------------------------
+// BOM
+
+// console.log(window.innerHeight);
+// console.log(window.scrollX);
+//window.open('http://google.com', 'cours js', 'heigt=600, width=800');
+//window.close()
+
+// Evenement adossés à wondow
+// alert('hello');
+
+//confirm
+btn2.addEventListener('click', () => {
+  confirm('Voulez vous vraiment vous tromper ?');
+});
+
+//prompt
+btn1.addEventListener('click', () => {
+  let answer = prompt('Entrez votre nom !');
+
+  questionContainer.innerHTML += '<h3>Bravo ' + answer + '</h3>';
+});
+
+// Timer, Compte à rebours
+// setTimeout(() => {
+//   questionContainer.style.borderRadius = '300px';
+// }, 2000);
+
+// let interval = setInterval(() => {
+//   document.body.innerHTML += "<div class='box'><h2>Nouvelle Boite !</h2></div>";
+// }, 1000);
+
+// document.body.addEventListener('click', (e) => {
+//   // e.target.remove();
+//   clearInterval(interval);
+// });
+
+// Location
+// console.log(location.href);
+// console.log(location.host);
+// console.log(location.pathname);
+// console.log(location.search);
+// location.replace('http://lequipe.fr');
+// window.onload = () => {
+//   location.href = 'http://twitter.fr';
+// };
+
+// Navigator
+// console.log(navigator.userAgent);
+
+// History
+// console.log(history);
+// window.history.back();
+//
+
+//-----------------------------------------------------------------------------------
+window.addEventListener('mousemove', (e) => {
+  nav.style.setProperty('--x', e.layerX + 'px');
+  nav.style.setProperty('--y', e.layery + 'px');
+});
