@@ -100,3 +100,61 @@ document.body.addEventListener('click', (e) => {
       null;
   }
 });
+
+// Méthodes String
+// let string2 = 'Javascript est un langage orienté objet';
+
+// // console.log(string2.indexOf('x')); // retourne -1 s'il ne le connait pas
+
+// // let newString = string2.slice(3);
+
+// // console.log(newString);
+
+// // console.log(string2.split(' '));
+
+// // console.log(string2.toLowerCase());
+
+// // console.log(string2.toUpperCase());
+
+// console.log(string2.replace('Javascript', 'TOTOROW'));
+
+//------------------------------------------------------------------------------------
+
+// Métodes Numbers
+
+let number2 = 42.1234;
+let numberString = '42.12 est un chiffre';
+
+// console.log(number2.toFixed(2));
+// console.log(parseInt('43'));
+// console.log(parseInt(numberString));
+// console.log(parseFloat(numberString));
+
+// console.log(Math.PI);
+// console.log(Math.round(4.9));
+// console.log(Math.floor(4.9));
+// console.log(Math.ceil(4.1));
+// console.log(Math.pow(2, 7));
+// console.log(Math.sqrt(16));
+
+// console.log(Math.floor(Math.random() * 50)); // ne dépaasera jamais 50
+
+//---------------------------------------------------------------------------------
+
+// Méthodes Arrays
+
+let array3 = ['Javascript', 'PHP', 'CSS'];
+let array4 = ['Ruby', 'Solidity'];
+
+// let newArray = array3.concat(array4); // Concane les tableaux
+// // console.log(newArray);
+
+// // let newArray = [...array3, ...array4]; // fusionne les tableaux
+// // console.log(newArray);
+
+// // console.log(array3.join('--')); // Mets des tirets de séparation
+
+// console.log(array3.slice(1));
+// console.log(newArray.slice(2, 5));
+
+console.log(array3.indexOf('CSS'));

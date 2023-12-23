@@ -45,3 +45,5 @@ const loop = () => {
   }, 60);
 };
 loop();
+
+// Méthodes String
