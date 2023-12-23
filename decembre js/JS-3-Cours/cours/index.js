@@ -82,10 +82,21 @@ let data = [
 // //     '<h2>' + data[i].pseudo + ' ' + data[i].technos.join('/') + '</h2>';
 // // }
 
+// Switch
 document.body.addEventListener('click', (e) => {
   console.log(e.target.id);
 
-  if (e.target.id === 'javascript') {
-    document.body.style.background = 'yellow';
+  switch (e.target.id) {
+    case 'javasript':
+      document.body.style.background = 'yellow';
+      break;
+    case 'php':
+      document.body.style.background = 'violet';
+      break;
+    case 'python':
+      document.body.style.background = 'blue';
+      break;
+    default:
+      null;
   }
 });
