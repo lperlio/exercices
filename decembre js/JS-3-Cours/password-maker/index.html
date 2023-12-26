@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+9<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,11 +10,28 @@
     
 <div class="app">
         <input type="text" id="password-output" value="Générateur de MDP" readonly>
-
     <div class="range-container">
-        <input type="range" class="password-length" min="4" max="24" value="8">
-        <input type="text">
+        <input type="range" class="password-length" min="4" max="24" value="8"
+        oninput="document.getElementById(`display-password-lenght`).value=this.value">
+        <input type="text" id="display-password-lenght" value="8" readonly>
     </div>
+
+    <div class="checkbox-container">
+        <input type="checkbox" id="lowercase" checked>
+        <label for="lowercase">a-z</label>
+
+        <input type="checkbox" id="lowercase">
+        <label for="upercase">A-Z</label>
+        
+        <input type="checkbox" id="lowercase">
+        <label for="number">0-9</label>
+
+        <input type="checkbox" id="lowercase">
+        <label for="lowercase">!-?</label>
+    </div>
+
+    <button id="generateButton">Générer mot de passe</button>
+    
 </div>
     <script src="./index.js"></script>
 </body>
