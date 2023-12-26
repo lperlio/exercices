@@ -31,7 +31,7 @@ let data = [
   },
   {
     pseudo: 'Lionel',
-    age: 56,
+    age: 57,
     technos: ['Javascript', 'React', 'NodeJs'],
     admin: false,
   },
@@ -143,7 +143,7 @@ let numberString = '42.12 est un chiffre';
 
 // Méthodes Arrays
 
-let array3 = ['Javascript', 'PHP', 'CSS'];
+let array3 = ['Javascript', 'Php', 'CSS'];
 let array4 = ['Ruby', 'Solidity'];
 
 // let newArray = array3.concat(array4); // Concane les tableaux
@@ -157,4 +157,53 @@ let array4 = ['Ruby', 'Solidity'];
 // console.log(array3.slice(1));
 // console.log(newArray.slice(2, 5));
 
-console.log(array3.indexOf('CSS'));
+// console.log(array3.indexOf('CSS'));
+
+// array3.forEach((languages) => console.log(languages));
+
+// console.log(array3.every((language) => language === 'S'));
+// console.log(array3.some((language) => language === 'Php'));
+
+// let shift = array3.shift();// enleve le premier élément du tableau
+// console.log(shift);
+
+// console.log(array3.pop());// affiche le dernière élément du tableau
+
+// const restArray = array3.splice(1, 1, 'C++');// remplace Php par C++
+// console.log(array3);
+
+//IMPORTANT//
+let arrayNumber = [4, 74, 28, 12, 1];
+// console.log(arrayNumber.reduce((x, y) => x + y)); // additionne les chiffres
+arrayNumber.push(14); // Rajoute 14 au tableau
+// console.log(arrayNumber);
+
+//FILTER, SORT, MAP
+
+// console.log(arrayNumber.filter((number) => number > 10));// ne donne que les chiffres supérieurs à 10
+// console.log(arrayNumber.sort()); //classe dans l'ordre du premier index
+// console.log(arrayNumber.sort((a, b) => b - a)); //classe du plus grand au plus petit
+
+// arrayNumber.map((number) => console.log(number));
+// arrayNumber.map((number) => (document.body.innerHTML += `<li> ${number}</li>`));
+// document.body.innerHTML = arrayNumber
+//   .map((number) => `<li> ${number}</li>`)
+//   .join('');
+
+//METHODE OBJECTS//
+
+document.body.innerHTML = data
+  .filter((user) => user.admin === false)
+  .filter((user) => user.pseudo.includes('o'))
+  .sort((a, b) => b.age - a.age)
+  .map(
+    (user) =>
+      `
+<div class="user-card">
+<h2>${user.pseudo}</h2>
+<p>Age : ${user.age} ans</p>
+<p>Status : ${user.admin ? 'Modérateur' : 'Membre'}</p>
+</div>
+`
+  )
+  .join('');
